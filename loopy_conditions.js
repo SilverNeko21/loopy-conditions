@@ -24,12 +24,9 @@ console.log(greaterNumber(5,10));
  * @return { String }
  */
  var i ;
-var output = 0 ;
 function stringOfNumbers(n){
   for(i = 0; i <= n; i++){
     console.log(i);
-    output += i;
-    return output;
  }
 }
 console.log(stringOfNumbers(10))
