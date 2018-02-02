@@ -23,13 +23,15 @@ console.log(greaterNumber(5,10));
  * @param  { Number } n
  * @return { String }
  */
+ var myString = ""
  var i ;
 function stringOfNumbers(n){
   for(i = 0; i <= n; i++){
-    console.log(i.toString());
+    myString += i + ",";
  }
+  return myString
 }
-stringOfNumbers(10)
+console.log(stringOfNumbers(10))
 
 /**
  * Create a function called 'sumOfArray'.
@@ -55,8 +57,18 @@ console.log(sumOfArray(apple.some(isNaN)))
  * @param  { array } arr
  * @return { array }
  */
+ var pop = [1,2,3,4,5,6,7,8,9,10];
+ var mop = [];
 
-
+function getEvens(sop){
+	for(var i = 0; i < sop.length; i++){
+		if ((pop[i] % 2) === 0) {
+			mop.push(pop[i]);
+		}
+	}
+  return mop
+}
+console.log(getEvens(pop))
 /**
  * Create a function called 'getOdds'.
  * This function will take in a parameter that is an array.
@@ -65,6 +77,17 @@ console.log(sumOfArray(apple.some(isNaN)))
  * @return { array }
  */
 
+/* I'm using the array called pop from the last problem */
+var nop = [];
+function getOdds(cop){
+	for(var i = 0; i < cop.length; i++){
+		if ((pop[i] % 2) > 0) {
+			nop.push(pop[i]);
+		}
+	}
+  return nop
+}
+console.log(getOdds(pop))
 
 /**
  * Create a function called 'calculate'.
