@@ -26,10 +26,11 @@ console.log(greaterNumber(5,10));
  var i ;
 function stringOfNumbers(n){
   for(i = 0; i <= n; i++){
-    console.log(i);
+    console.log(i.toString());
  }
 }
-console.log(stringOfNumbers(10))
+stringOfNumbers(10)
+
 /**
  * Create a function called 'sumOfArray'.
  * This function will take in a parameter that is an array.
@@ -38,9 +39,15 @@ console.log(stringOfNumbers(10))
  * @param  { array } arr
  * @return { Number }
  */
-
-
-
+var apple = [5,10,15];
+function sumOfArray(bannana){
+	if(bannana ==  false){
+      return apple[0] + apple[1] + apple[2];
+	}else{
+      return "Make sure the array is filled with numbers."
+    }
+}
+console.log(sumOfArray(apple.some(isNaN)))
 /**
  * Create a function called 'getEvens'.
  * This function will take in a parameter that is an array.
