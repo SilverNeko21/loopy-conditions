@@ -46,7 +46,7 @@ function sumOfArray(bannana){
 	if(bannana ==  false){
       return apple[0] + apple[1] + apple[2];
 	}else{
-      return "Make sure the array is filled with numbers."
+      return "Make sure the array is filled with numbers, not strings."
     }
 }
 console.log(sumOfArray(apple.some(isNaN)))
@@ -103,3 +103,21 @@ console.log(getOdds(pop))
  * @param  { String } operator ('add', subtract, 'multiply', 'divide')
  * @return { Number/String }
  */
+function calculate(num4, num5, operator){
+	if (operator == "add"){
+		return num4 + num5;
+
+	}else if(operator == "subtract"){
+		return num4 - num5;
+
+	}else if(operator == "multiply"){
+		return num4 * num5;
+
+	}else if(operator == "divide"){
+		return num4 / num5;
+
+	}else{
+		return "Invalid operator dummy."
+	}
+}
+console.log(calculate(10, 5, "add"))
